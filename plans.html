@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexible Plans — SETTER Ubud</title>
+<meta name="description" content="Flexible office plans in Ubud: single floor or full building. 1 or 3 year terms. Request a free presentation.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero { background: linear-gradient(140deg, #0c1d12, #1a3a2a); padding: 140px 48px 80px; }
+.page-hero-inner { max-width: 1100px; margin: 0 auto; }
+.page-hero h1 { font-size: clamp(34px, 5vw, 60px); font-weight: 900; color: #fff; margin-bottom: 16px; }
+.page-hero p { color: rgba(255,255,255,0.55); font-size: 18px; max-width: 540px; line-height: 1.7; }
+
+.plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.plan-card { background: #fff; border: 2px solid #e0ede6; border-radius: 20px; padding: 36px; position: relative; transition: all 0.2s; }
+.plan-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(45,122,79,0.12); }
+.plan-card.featured { border-color: #2d7a4f; box-shadow: 0 8px 40px rgba(45,122,79,0.14); }
+.plan-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: #2d7a4f; color: #fff; padding: 4px 18px; border-radius: 50px; font-size: 11px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; text-transform: uppercase; }
+.plan-icon { font-size: 40px; margin-bottom: 14px; }
+.plan-card h3 { font-size: 22px; font-weight: 900; color: #1a1a2e; margin-bottom: 6px; }
+.plan-size { font-size: 36px; font-weight: 900; color: #2d7a4f; margin-bottom: 4px; }
+.plan-desc { color: #777; font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+.plan-divider { height: 1px; background: #e8f0eb; margin-bottom: 20px; }
+.plan-feats { list-style: none; margin-bottom: 28px; }
+.plan-feats li { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f3f3f3; font-size: 14px; color: #444; }
+.plan-feats li:last-child { border-bottom: none; }
+.plan-feats li::before { content: '✓'; color: #2d7a4f; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.btn-plan { display: block; text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; transition: all 0.2s; }
+.btn-plan.solid { background: #2d7a4f; color: #fff; }
+.btn-plan.solid:hover { background: #235f3d; }
+.btn-plan.border { border: 2px solid #2d7a4f; color: #2d7a4f; }
+.btn-plan.border:hover { background: #2d7a4f; color: #fff; }
+
+.compare { background: #f8fbf9; border-radius: 20px; overflow: hidden; border: 1px solid #e0ede6; }
+.compare-head { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; background: #1a3a2a; color: #fff; padding: 18px 24px; font-weight: 700; font-size: 14px; }
+.compare-head div:first-child { color: rgba(255,255,255,0.5); font-weight: 400; }
+.compare-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 16px 24px; border-bottom: 1px solid #e8f0eb; align-items: center; }
+.compare-row:last-child { border-bottom: none; }
+.compare-row:nth-child(even) { background: #fff; }
+.compare-row div { font-size: 14px; }
+.compare-row div:first-child { color: #444; font-weight: 500; }
+.compare-row div:not(:first-child) { text-align: center; }
+.check { color: #2d7a4f; font-weight: 700; font-size: 16px; }
+.dash { color: #ccc; }
+.highlight-col { color: #2d7a4f; font-weight: 700; }
+
+.faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 800px; }
+.faq-item { background: #f8fbf9; border: 1px solid #e0ede6; border-radius: 14px; padding: 24px; }
+.faq-item h4 { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+.faq-item p { color: #666; font-size: 14px; line-height: 1.7; }
+
+@media(max-width:768px){
+  .page-hero { padding: 100px 20px 60px; }
+  .compare-head, .compare-row { grid-template-columns: 1.5fr 1fr 1fr; }
+  .compare-head div:nth-child(4), .compare-row div:nth-child(4) { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">SETTER <span>UBUD</span></a>
+  <div class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="space.html">The Space</a>
+    <a href="plans.html" class="active">Plans</a>
+    <a href="contact.html" class="btn-nav">Book a Tour</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-badge" style="margin-bottom:20px"><div class="dot"></div> Flexible · Transparent · No Hidden Costs</div>
+    <h1>Flexible Plans</h1>
+    <p>Choose the setup that works for your team. Single floor or full building — both are fully equipped and ready immediately.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Choose Your Plan</div>
+    <div class="section-title">Built Around Your Team</div>
+    <p class="section-sub">Every plan includes full furniture, AC, internet infrastructure, jungle terraces, and private offices. No extras to buy.</p>
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="plan-icon">🏢</div>
+        <h3>Single Floor</h3>
+        <div class="plan-size">~360 m²</div>
+        <p class="plan-desc">One full floor — ideal for teams of 30–60 people who want a premium standalone setup without the full building.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-feats">
+          <li>50+ equipped workstations</li>
+          <li>6 enclosed private offices</li>
+          <li>Dedicated jungle terrace</li>
+          <li>Full AC & internet-ready</li>
+          <li>Shared private building entrance</li>
+          <li>1 or 3 year terms available</li>
+        </ul>
+        <a href="contact.html" class="btn-plan border">Request Presentation</a>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-badge">Most Requested</div>
+        <div class="plan-icon">🏬</div>
+        <h3>Full Building</h3>
+        <div class="plan-size">720 m²</div>
+        <p class="plan-desc">Exclusive use of the entire building — maximum privacy, brand presence, and space for 80–120 people across two full floors.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-feats">
+          <li>100+ equipped workstations</li>
+          <li>12 enclosed private offices</li>
+          <li>2 jungle terraces (one per floor)</li>
+          <li>Exclusive private entrance</li>
+          <li>Full AC throughout</li>
+          <li>Internet-ready from Day One</li>
+          <li>1 or 3 year terms available</li>
+        </ul>
+        <a href="contact.html" class="btn-plan solid">Book a Free Tour →</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-icon">🛠️</div>
+        <h3>Custom</h3>
+        <div class="plan-size">Tailored</div>
+        <p class="plan-desc">Specific requirements? We'll structure an arrangement around your team's size, timeline, and way of working.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-feats">
+          <li>Custom space configuration</li>
+          <li>Flexible lease duration</li>
+          <li>Phased entry option</li>
+          <li>Dedicated relationship manager</li>
+          <li>Free consultation & walkthrough</li>
+          <li>All-inclusive setup</li>
+        </ul>
+        <a href="contact.html" class="btn-plan border">Get Free Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f8fbf9">
+  <div class="container">
+    <div class="section-tag">Plan Comparison</div>
+    <div class="section-title">What's Included</div>
+    <div class="compare">
+      <div class="compare-head">
+        <div>Feature</div>
+        <div style="text-align:center">Single Floor</div>
+        <div style="text-align:center;color:#7ecfa0">Full Building</div>
+        <div style="text-align:center">Custom</div>
+      </div>
+      <div class="compare-row"><div>Total area</div><div style="text-align:center">~360 m²</div><div class="highlight-col" style="text-align:center">720 m²</div><div style="text-align:center">Flexible</div></div>
+      <div class="compare-row"><div>Workstations</div><div style="text-align:center">50+</div><div class="highlight-col" style="text-align:center">100+</div><div style="text-align:center">Custom</div></div>
+      <div class="compare-row"><div>Private offices</div><div style="text-align:center">6</div><div class="highlight-col" style="text-align:center">12</div><div style="text-align:center">Flexible</div></div>
+      <div class="compare-row"><div>Jungle terraces</div><div style="text-align:center">1</div><div class="highlight-col" style="text-align:center">2</div><div style="text-align:center">1–2</div></div>
+      <div class="compare-row"><div>Exclusive entrance</div><div class="dash" style="text-align:center">Shared</div><div class="check" style="text-align:center">✓ Exclusive</div><div class="check" style="text-align:center">✓</div></div>
+      <div class="compare-row"><div>Full AC</div><div class="check" style="text-align:center">✓</div><div class="check highlight-col" style="text-align:center">✓</div><div class="check" style="text-align:center">✓</div></div>
+      <div class="compare-row"><div>Internet-ready</div><div class="check" style="text-align:center">✓</div><div class="check highlight-col" style="text-align:center">✓</div><div class="check" style="text-align:center">✓</div></div>
+      <div class="compare-row"><div>All furniture included</div><div class="check" style="text-align:center">✓</div><div class="check highlight-col" style="text-align:center">✓</div><div class="check" style="text-align:center">✓</div></div>
+      <div class="compare-row"><div>Term flexibility</div><div style="text-align:center">1 or 3 yr</div><div class="highlight-col" style="text-align:center">1 or 3 yr</div><div style="text-align:center">Negotiable</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Common Questions</div>
+    <div class="section-title">Good to Know</div>
+    <div class="faq-list">
+      <div class="faq-item"><h4>How quickly can we move in?</h4><p>Immediately. The space is fully equipped and ready — your team can start working on Day One. No fit-out period, no procurement delays.</p></div>
+      <div class="faq-item"><h4>Are there any hidden costs?</h4><p>No. The space comes fully furnished and equipped. The terms you agree include everything — there are no surprise renovation bills or additional procurement requirements.</p></div>
+      <div class="faq-item"><h4>Can we lease just one floor?</h4><p>Yes. Each floor (~360 m²) is fully self-contained and available for individual lease. You can also lease both floors as an exclusive full-building arrangement.</p></div>
+      <div class="faq-item"><h4>What lease durations are available?</h4><p>We offer 1-year and 3-year arrangements. For longer-term commitments, we're happy to discuss tailored terms that work for your business planning.</p></div>
+      <div class="faq-item"><h4>Is internet connectivity included?</h4><p>Infrastructure is fully in place. You choose your preferred provider and connect from Day One — no installation needed on your side.</p></div>
+    </div>
+  </div>
+</section>
+
+<div style="background:#f8fbf9;padding:80px 48px;text-align:center">
+  <div class="container">
+    <h2 style="font-size:clamp(26px,4vw,40px);font-weight:900;margin-bottom:14px">Not Sure Which Plan?</h2>
+    <p style="color:#666;font-size:16px;margin-bottom:36px">Book a free tour or request a presentation — we'll help you find the right fit.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn-green">📅 Book a Free Tour</a>
+      <a href="contact.html" class="btn-outline-dark">📋 Request Presentation</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="space.html">The Space</a><a href="plans.html">Plans</a><a href="contact.html">Contact</a>
+  </div>
+  © 2026 SETTER Ubud — Premium Office Space in the Heart of Bali
+</footer>
+</body>
+</html>

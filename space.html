@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Space — SETTER Ubud</title>
+<meta name="description" content="Explore 720 m² of fully equipped premium office space in Ubud. 2 floors, 12 private offices, jungle terraces, brand new furniture.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero { background: linear-gradient(140deg, #0c1d12, #1a3a2a); padding: 140px 48px 80px; }
+.page-hero-inner { max-width: 1100px; margin: 0 auto; }
+.page-hero h1 { font-size: clamp(34px, 5vw, 60px); font-weight: 900; color: #fff; margin-bottom: 16px; }
+.page-hero p { color: rgba(255,255,255,0.55); font-size: 18px; max-width: 540px; line-height: 1.7; }
+
+.floor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.floor-card { border-radius: 20px; overflow: hidden; border: 1px solid #e0ede6; }
+.floor-header { background: #2d7a4f; color: #fff; padding: 24px 28px; }
+.floor-header h3 { font-size: 20px; font-weight: 800; }
+.floor-header p { color: rgba(255,255,255,0.7); font-size: 14px; margin-top: 4px; }
+.floor-body { padding: 28px; background: #f8fbf9; }
+.floor-feature { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid #e8f0eb; }
+.floor-feature:last-child { border-bottom: none; }
+.floor-feature .fi { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.floor-feature div strong { display: block; font-size: 14px; color: #1a1a2e; font-weight: 700; }
+.floor-feature div span { font-size: 13px; color: #777; }
+
+.inclusions { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.inc-card { background: #fff; border: 1px solid #e4ede8; border-radius: 16px; padding: 24px; }
+.inc-card .inc-icon { font-size: 28px; margin-bottom: 12px; }
+.inc-card h4 { font-size: 15px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+.inc-card p { color: #777; font-size: 13px; line-height: 1.6; }
+.inc-tag { display: inline-block; background: #e8f5ee; color: #2d7a4f; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 50px; margin-bottom: 10px; }
+
+.specs-table { background: #f8fbf9; border-radius: 20px; overflow: hidden; border: 1px solid #e0ede6; }
+.spec-row { display: flex; padding: 18px 28px; border-bottom: 1px solid #e8f0eb; }
+.spec-row:last-child { border-bottom: none; }
+.spec-row:nth-child(even) { background: #fff; }
+.spec-label { flex: 1; color: #666; font-size: 15px; }
+.spec-value { font-weight: 700; color: #1a1a2e; font-size: 15px; }
+
+.location-block { background: linear-gradient(135deg, #0c1d12, #1a3a2a); color: #fff; border-radius: 24px; padding: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.location-block h3 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 14px; }
+.location-block p { color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 24px; }
+.loc-perks { display: flex; flex-direction: column; gap: 12px; }
+.loc-perk { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.8); font-size: 14px; }
+.loc-perk::before { content: '✓'; color: #4ade80; font-weight: 700; }
+
+@media(max-width:768px){
+  .page-hero { padding: 100px 20px 60px; }
+  .floor-grid { grid-template-columns: 1fr; }
+  .location-block { grid-template-columns: 1fr; padding: 32px 24px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">SETTER <span>UBUD</span></a>
+  <div class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="space.html" class="active">The Space</a>
+    <a href="plans.html">Plans</a>
+    <a href="contact.html" class="btn-nav">Book a Tour</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-badge" style="margin-bottom:20px"><div class="dot"></div> Ubud, Bali · 720 m²</div>
+    <h1>The Space</h1>
+    <p>Two full floors of premium, fully equipped office space in the heart of Ubud — ready the moment you walk in.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Floor by Floor</div>
+    <div class="section-title">Two Floors. One Vision.</div>
+    <p class="section-sub">Lease the full building or a single floor — each level is fully self-contained and ready to use.</p>
+    <div class="floor-grid">
+      <div class="floor-card">
+        <div class="floor-header"><h3>Floor 1</h3><p>~360 m² · Ground level · Private entrance</p></div>
+        <div class="floor-body">
+          <div class="floor-feature"><div class="fi">🖥️</div><div><strong>50+ Workstations</strong><span>Modern desks with ergonomic chairs</span></div></div>
+          <div class="floor-feature"><div class="fi">🚪</div><div><strong>6 Private Offices</strong><span>Enclosed rooms for focused work</span></div></div>
+          <div class="floor-feature"><div class="fi">🌿</div><div><strong>Jungle Terrace</strong><span>Outdoor space with jungle views</span></div></div>
+          <div class="floor-feature"><div class="fi">🚶</div><div><strong>Private Entrance</strong><span>Dedicated access — exclusive to your team</span></div></div>
+          <div class="floor-feature"><div class="fi">❄️</div><div><strong>Full AC</strong><span>Comfortable climate year-round</span></div></div>
+        </div>
+      </div>
+      <div class="floor-card">
+        <div class="floor-header" style="background:#1a5c38"><h3>Floor 2</h3><p>~360 m² · Upper level · Panoramic views</p></div>
+        <div class="floor-body">
+          <div class="floor-feature"><div class="fi">🖥️</div><div><strong>50+ Workstations</strong><span>Modern desks with ergonomic chairs</span></div></div>
+          <div class="floor-feature"><div class="fi">🚪</div><div><strong>6 Private Offices</strong><span>Enclosed rooms for focused work</span></div></div>
+          <div class="floor-feature"><div class="fi">🌳</div><div><strong>Terrace with Jungle Views</strong><span>Elevated panoramic outdoor space</span></div></div>
+          <div class="floor-feature"><div class="fi">🛋️</div><div><strong>Lounge Area</strong><span>Stylish soft seating for informal meetings</span></div></div>
+          <div class="floor-feature"><div class="fi">❄️</div><div><strong>Full AC</strong><span>Comfortable climate year-round</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="background:#f8fbf9">
+  <div class="container">
+    <div class="section-tag">What's Included</div>
+    <div class="section-title">Everything. Included. Ready.</div>
+    <p class="section-sub">No procurement needed. No renovation headaches. Everything has been handled so your team can start immediately.</p>
+    <div class="inclusions">
+      <div class="inc-card"><div class="inc-tag">Furniture</div><div class="inc-icon">🪑</div><h4>Brand New Desks & Chairs</h4><p>Modern ergonomic workstations and chairs throughout. All selected for daily professional use.</p></div>
+      <div class="inc-card"><div class="inc-tag">Climate</div><div class="inc-icon">❄️</div><h4>Full Air Conditioning</h4><p>Complete AC installation on both floors. Comfortable, productive environment year-round.</p></div>
+      <div class="inc-card"><div class="inc-tag">Connectivity</div><div class="inc-icon">🌐</div><h4>Internet-Ready Infrastructure</h4><p>Cabling and infrastructure in place for fast, reliable internet from Day One.</p></div>
+      <div class="inc-card"><div class="inc-tag">Meetings</div><div class="inc-icon">🤝</div><h4>12 Private Offices</h4><p>Enclosed offices across both floors — ideal for leadership, client meetings, and focused work.</p></div>
+      <div class="inc-card"><div class="inc-tag">Outdoor</div><div class="inc-icon">🌿</div><h4>Jungle Terraces</h4><p>Each floor has a dedicated outdoor terrace with stunning jungle views — perfect for breaks and informal sessions.</p></div>
+      <div class="inc-card"><div class="inc-tag">Renovation</div><div class="inc-icon">✨</div><h4>2026 Fit-Out</h4><p>Fully refurbished in 2026. Premium materials, natural wood finishes, and modern aesthetic throughout.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Technical Specs</div>
+    <div class="section-title">Key Details</div>
+    <div class="specs-table">
+      <div class="spec-row"><span class="spec-label">Total Area</span><span class="spec-value">720 m² (2 floors × ~360 m²)</span></div>
+      <div class="spec-row"><span class="spec-label">Workstations</span><span class="spec-value">100+ fully equipped</span></div>
+      <div class="spec-row"><span class="spec-label">Private Offices</span><span class="spec-value">12 enclosed offices</span></div>
+      <div class="spec-row"><span class="spec-label">Floors</span><span class="spec-value">2 full floors, each self-contained</span></div>
+      <div class="spec-row"><span class="spec-label">Outdoor Spaces</span><span class="spec-value">2 jungle terraces (one per floor)</span></div>
+      <div class="spec-row"><span class="spec-label">Entrance</span><span class="spec-value">Private dedicated entrance</span></div>
+      <div class="spec-row"><span class="spec-label">Climate</span><span class="spec-value">Full AC throughout</span></div>
+      <div class="spec-row"><span class="spec-label">Internet</span><span class="spec-value">Infrastructure ready from Day One</span></div>
+      <div class="spec-row"><span class="spec-label">Renovation</span><span class="spec-value">Completed 2026 — premium materials</span></div>
+      <div class="spec-row"><span class="spec-label">Availability</span><span class="spec-value">Immediate — move in now</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f8fbf9">
+  <div class="container">
+    <div class="location-block">
+      <div>
+        <h3>Heart of Ubud</h3>
+        <p>SETTER is located in central Ubud — Bali's most sought-after destination for forward-thinking businesses, creative studios, and growing teams.</p>
+        <div class="loc-perks">
+          <div class="loc-perk">Walking distance to central Ubud</div>
+          <div class="loc-perk">Surrounded by restaurants, cafés & services</div>
+          <div class="loc-perk">Convenient for international teams</div>
+          <div class="loc-perk">Ubud's established business community</div>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:80px;margin-bottom:16px">📍</div>
+        <div style="color:rgba(255,255,255,0.6);font-size:14px;line-height:1.7">Jl. Raya Ubud area<br>Central Ubud, Bali<br>Indonesia</div>
+        <a href="contact.html" class="btn-green" style="margin-top:24px;display:inline-block">Get Exact Address →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="background:#fff;padding:80px 48px;text-align:center">
+  <div class="container">
+    <h2 style="font-size:clamp(26px,4vw,40px);font-weight:900;margin-bottom:14px">Ready to Walk Through?</h2>
+    <p style="color:#666;font-size:16px;margin-bottom:36px">See the space in person. Free tour, no commitment.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn-green">📅 Book a Free Tour</a>
+      <a href="plans.html" class="btn-outline-dark">View Flexible Plans</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="space.html">The Space</a><a href="plans.html">Plans</a><a href="contact.html">Contact</a>
+  </div>
+  © 2026 SETTER Ubud — Premium Office Space in the Heart of Bali
+</footer>
+</body>
+</html>
